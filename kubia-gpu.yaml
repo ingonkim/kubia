@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubia-gpu
+spec:
+  nodeSelector:
+    nodename: knode2
+  containers:
+    - image: exgon21c/kubia
+      name: kubia
+
